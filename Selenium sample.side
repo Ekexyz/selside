@@ -1,7 +1,7 @@
 {
   "id": "fdd0d16c-4fd0-4aee-8510-79a670b571e6",
   "version": "2.0",
-  "name": "Selenium sample",
+  "name": "Selenium_sample",
   "url": "https://qentinelqi.github.io",
   "tests": [{
     "id": "be71bd09-0f48-4fba-9a62-ac9972d35aab",
@@ -296,7 +296,7 @@
   }],
   "suites": [{
     "id": "b511bda1-29e3-4ccb-90fd-e41a4f127c0b",
-    "name": "Default Suite",
+    "name": "Default_Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
