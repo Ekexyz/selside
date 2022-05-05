@@ -1,0 +1,307 @@
+{
+  "id": "fdd0d16c-4fd0-4aee-8510-79a670b571e6",
+  "version": "2.0",
+  "name": "Selenium sample",
+  "url": "https://qentinelqi.github.io",
+  "tests": [{
+    "id": "be71bd09-0f48-4fba-9a62-ac9972d35aab",
+    "name": "Test case 1",
+    "commands": [{
+      "id": "de98fced-669f-46d2-89cc-f561a927e2bb",
+      "comment": "",
+      "command": "open",
+      "target": "/shop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6df2b569-1cd2-48e9-b594-d61dde171a21",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1425x948",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "646ffc75-55dd-4269-b8fe-73af24dec84c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/contact/\n')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c63b36cb-d368-4584-9b3a-600d44d94340",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Erkka Karimäki"
+    }, {
+      "id": "54936506-7b56-4c9d-adbe-f504aa804a5e",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "ekarimaki@copado.com"
+    }, {
+      "id": "3c98485a-f7fa-4549-9ab7-ca1983990ff5",
+      "comment": "",
+      "command": "type",
+      "target": "id=message",
+      "targets": [
+        ["id=message", "id"],
+        ["name=message", "name"],
+        ["css=#message", "css:finder"],
+        ["xpath=//textarea[@id='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Here is a sample message"
+    }, {
+      "id": "cad452bf-1bfc-4aa8-85ba-a3644c9acc7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Send Message']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef746149-b32d-4d33-8f66-6a34becf736b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editable:nth-child(1)",
+      "targets": [
+        ["css=.editable:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/section/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Success')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "747bc54d-275a-4714-82c1-67016894c0ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
+      "targets": [
+        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/shop/')])[5]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4815c583-e9dc-4ad2-9f3f-e27ca8604deb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gavin the Tiger",
+      "targets": [
+        ["linkText=Gavin the Tiger", "linkText"],
+        ["css=li:nth-child(6) > .product-details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gavin the Tiger')]", "xpath:link"],
+        ["xpath=//div[@id='products']/section/div/ul/li[6]/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shop/products/tiger/')])[6]", "xpath:href"],
+        ["xpath=//li[6]/div[2]/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gavin the Tiger')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f24e80c-175e-4c98-abaf-9114b7ff7c5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b160d6a3-3503-4be7-944c-ba2784f9b8b2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b87706ee-369e-4d56-9672-3f44c43b510c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e933743-7e6f-408e-87d8-35cfb460af4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-modal__close-title",
+      "targets": [
+        ["css=.snipcart-modal__close-title", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d2b8221-d7d4-4c1d-850e-c9d4e4a07590",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
+      "targets": [
+        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/shop/')])[10]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be0f5a8-2716-4716-8395-4f8d48ead658",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bumble the Elephant",
+      "targets": [
+        ["linkText=Bumble the Elephant", "linkText"],
+        ["css=li:nth-child(2) > .product-details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bumble the Elephant')]", "xpath:link"],
+        ["xpath=//div[@id='products']/section/div/ul/li[2]/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shop/products/elephant/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div[2]/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bumble the Elephant')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7d8926-5556-4825-bb74-f3b86491f185",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbf4e62-d610-405a-816a-232ab4695036",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.snipcart-modal__close-title",
+      "targets": [
+        ["css=.snipcart-modal__close-title", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a612bb34-5e8f-4144-8337-3218d1c0b96e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-modal__close-title",
+      "targets": [
+        ["css=.snipcart-modal__close-title", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaab073e-e83f-43c8-b8e6-2dc2737389c8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.snipcart-modal__close-title",
+      "targets": [
+        ["css=.snipcart-modal__close-title", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef909fc-0571-4045-934d-a987550f085a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shipping",
+      "targets": [
+        ["linkText=Shipping", "linkText"],
+        ["css=.footer-nav:nth-child(3) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shipping')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/shipping/')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shipping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71583e05-93b0-4b54-91d7-e7b467b44927",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Returns",
+      "targets": [
+        ["linkText=Returns", "linkText"],
+        ["css=.footer-nav:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Returns')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/shop/returns/')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Returns')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "473bb740-939b-4579-b3d9-b11bd725f13c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
+      "targets": [
+        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/shop/')])[5]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce0a4d5c-4fe0-4b47-9983-90f14c104d51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b511bda1-29e3-4ccb-90fd-e41a4f127c0b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://qentinelqi.github.io/"],
+  "plugins": []
+}
