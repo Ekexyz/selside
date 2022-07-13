@@ -1,292 +1,167 @@
 {
-  "id": "fdd0d16c-4fd0-4aee-8510-79a670b571e6",
+  "id": "39171680-1dc1-4fed-bd16-7da5e466ea73",
   "version": "2.0",
-  "name": "Selenium_sample",
-  "url": "https://qentinelqi.github.io",
+  "name": "google",
+  "url": "https://www.google.com",
   "tests": [{
-    "id": "be71bd09-0f48-4fba-9a62-ac9972d35aab",
-    "name": "Test case 1",
+    "id": "a495c68a-2be3-48c0-bc86-d759b5aba560",
+    "name": "simple_search",
     "commands": [{
-      "id": "de98fced-669f-46d2-89cc-f561a927e2bb",
+      "id": "9bfb22b1-1564-4e6d-9d7f-96eb23d61658",
       "comment": "",
       "command": "open",
-      "target": "/shop/",
+      "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "6df2b569-1cd2-48e9-b594-d61dde171a21",
+      "id": "fae2c935-503c-4fb8-8c9a-8a36e3bf69d6",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1425x948",
+      "target": "1054x808",
       "targets": [],
       "value": ""
     }, {
-      "id": "646ffc75-55dd-4269-b8fe-73af24dec84c",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Contact",
-      "targets": [
-        ["linkText=Contact", "linkText"],
-        ["css=a:nth-child(4)", "css:finder"],
-        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/shop/contact/\n')]", "xpath:href"],
-        ["xpath=//a[4]", "xpath:position"],
-        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c63b36cb-d368-4584-9b3a-600d44d94340",
+      "id": "f6db5c3c-3ab7-46b4-9ee8-4bd4d0bc404d",
       "comment": "",
       "command": "type",
-      "target": "id=name",
+      "target": "name=q",
       "targets": [
-        ["id=name", "id"],
-        ["name=name", "name"],
-        ["css=#name", "css:finder"],
-        ["xpath=//input[@id='name']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "Erkka Karimäki"
+      "value": "testing search"
     }, {
-      "id": "54936506-7b56-4c9d-adbe-f504aa804a5e",
+      "id": "45c85a80-62ce-4ac7-9fb5-c4cdbce1a918",
       "comment": "",
-      "command": "type",
-      "target": "id=email",
+      "command": "sendKeys",
+      "target": "name=q",
       "targets": [
-        ["id=email", "id"],
-        ["name=email", "name"],
-        ["css=#email", "css:finder"],
-        ["xpath=//input[@id='email']", "xpath:attributes"],
-        ["xpath=//input[2]", "xpath:position"]
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "ekarimaki@copado.com"
+      "value": "${KEY_ENTER}"
     }, {
-      "id": "3c98485a-f7fa-4549-9ab7-ca1983990ff5",
+      "id": "faa6b572-3661-4515-977b-77ea419c9bb2",
       "comment": "",
-      "command": "type",
-      "target": "id=message",
-      "targets": [
-        ["id=message", "id"],
-        ["name=message", "name"],
-        ["css=#message", "css:finder"],
-        ["xpath=//textarea[@id='message']", "xpath:attributes"],
-        ["xpath=//textarea", "xpath:position"]
-      ],
-      "value": "Here is a sample message"
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71e3975d-6eaa-467f-b7cc-76bea247ee5d",
+    "name": "i_feel_lucky",
+    "commands": [{
+      "id": "eb9076a9-9291-4793-9772-563eb6e1f6ba",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
     }, {
-      "id": "cad452bf-1bfc-4aa8-85ba-a3644c9acc7e",
+      "id": "6a128b51-dcfa-454b-af9e-544a7eb9ab00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5891f809-f4e7-4bec-98e3-35840f8437af",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(10)",
+      "target": "xpath=(//input[@name='btnI'])[2]",
       "targets": [
-        ["css=input:nth-child(10)", "css:finder"],
-        ["xpath=//input[@value='Send Message']", "xpath:attributes"],
-        ["xpath=//input[5]", "xpath:position"]
+        ["css=center:nth-child(1) > .RNmpXc", "css:finder"],
+        ["xpath=(//input[@name='btnI'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div[3]/center/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/center/input[2]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "ef746149-b32d-4d33-8f66-6a34becf736b",
+      "id": "e4174e83-8164-4d82-ba26-54878597ade6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2899ab02-1549-4e74-a46f-d657835d46f9",
+    "name": "start_from_search",
+    "commands": [{
+      "id": "30a6c9df-a92c-416e-99d9-d29fbdd77f36",
+      "comment": "",
+      "command": "open",
+      "target": "/search?sxsrf=ACYBGNS7HG4zKsA80naAg9O2pvStvZxDBg%3A1568374073922&source=hp&ei=OX17XZ7ANcS8kwXThrDIAg&q=test&oq=test&gs_l=psy-ab.3..0i131j0j0i131j0l3j0i3j0l3.2361.3172..3432...0.0..0.79.292.4......0....1..gws-wiz.-_1bRWD2TPY&ved=0ahUKEwjewLHc2M3kAhVE3qQKHVMDDCkQ4dUDCAU&uact=5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0be299fa-c782-4092-9415-34493b986159",
       "comment": "",
       "command": "click",
-      "target": "css=.editable:nth-child(1)",
+      "target": "linkText=Videos",
       "targets": [
-        ["css=.editable:nth-child(1)", "css:finder"],
-        ["xpath=//div[2]/section/div/h2", "xpath:position"],
-        ["xpath=//h2[contains(.,'Success')]", "xpath:innerText"]
+        ["linkText=Video", "linkText"],
+        ["css=.hdtb-mitem:nth-child(2) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Video')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&sxsrf=ACYBGNQMFLRRUPxT3ztT6PtvH3JKAsvCUw:1568374122086&source=lnms&tbm=vid&sa=X&ved=0ahUKEwiR0q_z2M3kAhWmsaQKHbePCzUQ_AUIEigB')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Video')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "747bc54d-275a-4714-82c1-67016894c0ab",
+      "id": "23f48f25-2bc8-44b1-bffb-a9f9cbb650da",
       "comment": "",
       "command": "click",
-      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
+      "target": "linkText=Images",
       "targets": [
-        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
-        ["xpath=(//a[contains(@href, '/shop/')])[5]", "xpath:href"],
-        ["xpath=//li/a", "xpath:position"]
+        ["linkText=Immagini", "linkText"],
+        ["css=.hdtb-mitem:nth-child(3) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Immagini')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&biw=1043&bih=722&tbm=isch&sxsrf=ACYBGNSXOacioqdkcWCDvvAn-KWTzBoJGA:1568374127967&source=lnms&sa=X&ved=0ahUKEwibwJb22M3kAhXCzqQKHVyEAEQQ_AUICygC')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Immagini')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "4815c583-e9dc-4ad2-9f3f-e27ca8604deb",
+      "id": "2e005d8d-35c9-4a24-80ea-a76fa9d083cd",
       "comment": "",
       "command": "click",
-      "target": "linkText=Gavin the Tiger",
+      "target": "linkText=News",
       "targets": [
-        ["linkText=Gavin the Tiger", "linkText"],
-        ["css=li:nth-child(6) > .product-details a", "css:finder"],
-        ["xpath=//a[contains(text(),'Gavin the Tiger')]", "xpath:link"],
-        ["xpath=//div[@id='products']/section/div/ul/li[6]/div[2]/h4/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '/shop/products/tiger/')])[6]", "xpath:href"],
-        ["xpath=//li[6]/div[2]/h4/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Gavin the Tiger')]", "xpath:innerText"]
+        ["linkText=Notizie", "linkText"],
+        ["css=.NZmxZe:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Notizie')]", "xpath:link"],
+        ["xpath=//body[@id='yDmH0d']/div[2]/c-wiz/div/div/div/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&source=lmns&tbm=nws&bih=722&biw=1043&hl=it&ved=2ahUKEwihrfr22M3kAhVFLxoKHccVCVUQ_AUoA3oECAEQAw')]", "xpath:href"],
+        ["xpath=//c-wiz/div/div/div/div/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Notizie')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2f24e80c-175e-4c98-abaf-9114b7ff7c5d",
+      "id": "753a7f8b-1229-49c3-8f0c-ac688bf890d9",
       "comment": "",
       "command": "click",
-      "target": "css=.snipcart-add-item",
+      "target": "linkText=All",
       "targets": [
-        ["css=.snipcart-add-item", "css:finder"],
-        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+        ["linkText=Tutti", "linkText"],
+        ["css=.hdtb-mitem:nth-child(1) > .q", "css:finder"],
+        ["xpath=//a[contains(text(),'Tutti')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb-vis']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=test&bih=722&biw=1043&hl=it&sxsrf=ACYBGNSgqgo-0Ot03vSCh9uJz7uyb9V6dg:1568374131031&source=lnms&sa=X&ved=0ahUKEwjKxtH32M3kAhXJCewKHWsNA0MQ_AUICSgA')]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/div/div/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "b160d6a3-3503-4be7-944c-ba2784f9b8b2",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.snipcart-add-item",
-      "targets": [
-        ["css=.snipcart-add-item", "css:finder"],
-        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "b87706ee-369e-4d56-9672-3f44c43b510c",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.snipcart-add-item",
-      "targets": [
-        ["css=.snipcart-add-item", "css:finder"],
-        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
-        ["xpath=//div[2]/div/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5e933743-7e6f-408e-87d8-35cfb460af4e",
-      "comment": "",
-      "command": "click",
-      "target": "css=.snipcart-modal__close-title",
-      "targets": [
-        ["css=.snipcart-modal__close-title", "css:finder"],
-        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4d2b8221-d7d4-4c1d-850e-c9d4e4a07590",
-      "comment": "",
-      "command": "click",
-      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
-      "targets": [
-        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
-        ["xpath=(//a[contains(@href, '/shop/')])[10]", "xpath:href"],
-        ["xpath=//li/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1be0f5a8-2716-4716-8395-4f8d48ead658",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Bumble the Elephant",
-      "targets": [
-        ["linkText=Bumble the Elephant", "linkText"],
-        ["css=li:nth-child(2) > .product-details a", "css:finder"],
-        ["xpath=//a[contains(text(),'Bumble the Elephant')]", "xpath:link"],
-        ["xpath=//div[@id='products']/section/div/ul/li[2]/div[2]/h4/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '/shop/products/elephant/')])[3]", "xpath:href"],
-        ["xpath=//li[2]/div[2]/h4/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Bumble the Elephant')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "3b7d8926-5556-4825-bb74-f3b86491f185",
-      "comment": "",
-      "command": "click",
-      "target": "css=.snipcart-add-item",
-      "targets": [
-        ["css=.snipcart-add-item", "css:finder"],
-        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "2fbf4e62-d610-405a-816a-232ab4695036",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "css=.snipcart-modal__close-title",
-      "targets": [
-        ["css=.snipcart-modal__close-title", "css:finder"],
-        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "a612bb34-5e8f-4144-8337-3218d1c0b96e",
-      "comment": "",
-      "command": "click",
-      "target": "css=.snipcart-modal__close-title",
-      "targets": [
-        ["css=.snipcart-modal__close-title", "css:finder"],
-        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "aaab073e-e83f-43c8-b8e6-2dc2737389c8",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "css=.snipcart-modal__close-title",
-      "targets": [
-        ["css=.snipcart-modal__close-title", "css:finder"],
-        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
-        ["xpath=//span", "xpath:position"],
-        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "9ef909fc-0571-4045-934d-a987550f085a",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Shipping",
-      "targets": [
-        ["linkText=Shipping", "linkText"],
-        ["css=.footer-nav:nth-child(3) li:nth-child(1) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Shipping')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/shop/shipping/')]", "xpath:href"],
-        ["xpath=//li[3]/ul/li/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Shipping')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "71583e05-93b0-4b54-91d7-e7b467b44927",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Returns",
-      "targets": [
-        ["linkText=Returns", "linkText"],
-        ["css=.footer-nav:nth-child(3) li:nth-child(2) > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Returns')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '/shop/returns/')]", "xpath:href"],
-        ["xpath=//li[3]/ul/li[2]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Returns')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "473bb740-939b-4579-b3d9-b11bd725f13c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.footer-nav:nth-child(2) li:nth-child(1) > a",
-      "targets": [
-        ["css=.footer-nav:nth-child(2) li:nth-child(1) > a", "css:finder"],
-        ["xpath=(//a[contains(text(),'Products')])[2]", "xpath:link"],
-        ["xpath=(//a[contains(@href, '/shop/')])[5]", "xpath:href"],
-        ["xpath=//li/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "ce0a4d5c-4fe0-4b47-9983-90f14c104d51",
+      "id": "267aaecc-9240-4247-adba-e3eaa590e129",
       "comment": "",
       "command": "close",
       "target": "",
@@ -295,13 +170,13 @@
     }]
   }],
   "suites": [{
-    "id": "b511bda1-29e3-4ccb-90fd-e41a4f127c0b",
-    "name": "Default_Suite",
+    "id": "c424e089-76eb-46bf-8ff0-802c6a639c79",
+    "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["a495c68a-2be3-48c0-bc86-d759b5aba560", "71e3975d-6eaa-467f-b7cc-76bea247ee5d", "2899ab02-1549-4e74-a46f-d657835d46f9"]
   }],
-  "urls": ["https://qentinelqi.github.io/"],
+  "urls": ["https://www.google.com/"],
   "plugins": []
 }
