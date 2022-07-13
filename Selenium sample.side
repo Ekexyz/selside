@@ -96,21 +96,6 @@
       ],
       "value": ""
     }, {
-      "id": "66ac76d1-456b-4e54-a31d-8330e0b0e1bc",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=jobs",
-      "targets": [
-        ["linkText=jobs", "linkText"],
-        ["css=.pagetop > a:nth-child(7)", "css:finder"],
-        ["xpath=//a[contains(text(),'jobs')]", "xpath:link"],
-        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[2]/span/a[5]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'jobs')]", "xpath:href"],
-        ["xpath=//a[5]", "xpath:position"],
-        ["xpath=//a[contains(.,'jobs')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "4f6f4718-ef23-4380-8a6a-7171efcf18c2",
       "comment": "",
       "command": "open",
