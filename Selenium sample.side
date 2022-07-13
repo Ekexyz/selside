@@ -103,28 +103,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "ef135ce1-f4cc-4a26-83c3-c1c3415f5ede",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=login",
-      "targets": [
-        ["linkText=login", "linkText"],
-        ["css=.pagetop > a:nth-child(1)", "css:finder"],
-        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
-        ["xpath=//table[@id='hnmain']/tbody/tr/td/table/tbody/tr/td[3]/span/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'login?goto=jobs')]", "xpath:href"],
-        ["xpath=//td[3]/span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'login')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6ef1fcdc-fda0-49c0-a993-b05cd87c133f",
-      "comment": "",
-      "command": "open",
-      "target": "/",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "f30e0970-2f78-4ece-a892-752a5bf49267",
       "comment": "",
       "command": "click",
